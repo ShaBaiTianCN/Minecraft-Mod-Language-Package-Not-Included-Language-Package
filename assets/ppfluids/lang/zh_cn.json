@@ -1,0 +1,20 @@
+{
+    "block.ppfluids.fluid_pipe": "流体管道",
+    "item.ppfluids.fluid_item": "流体容器",
+
+    "item.ppfluids.low_fluid_extraction_module": "低级流体抽取模块",
+    "item.ppfluids.medium_fluid_extraction_module": "中级流体抽取模块",
+    "item.ppfluids.high_fluid_extraction_module": "高级流体抽取模块",
+    "item.ppfluids.low_fluid_filter_module": "低级流体过滤模块",
+    "item.ppfluids.medium_fluid_filter_module": "中级流体过滤模块",
+    "item.ppfluids.high_fluid_filter_module": "高级流体过滤模块",
+    "item.ppfluids.low_fluid_retrieval_module": "低级流体提取模块",
+    "item.ppfluids.medium_fluid_retrieval_module": "中级流体提取模块",
+    "item.ppfluids.high_fluid_retrieval_module": "高级流体提取模块",
+    "info.prettypipes.fluid_extraction_module": "从相邻容器中抽取流体\n过滤和抽取量因等级而异\n更高级可以防止过量发送流体",
+
+    "info.prettypipes.fluid_filter_module": "限制流体流入相邻容器\n过滤量因等级而异",
+    "info.prettypipes.fluid_retrieval_module": "从管道网络中其他容器抽取流体\n过滤和抽取量因等级而异\n更高级可以防止过量发送流体",
+
+    "info.ppfluids.fluid_item.usage": "把我放在流体储罐上来让流体进入！"
+}
