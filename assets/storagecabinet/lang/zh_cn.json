@@ -1,0 +1,19 @@
+{
+    "block.storagecabinet.storagecabinet_wood": "木储物柜",
+    "block.storagecabinet.storagecabinet_iron": "铁储物柜",
+    "block.storagecabinet.storagecabinet_gold": "金储物柜",
+    "block.storagecabinet.storagecabinet_diamond": "钻石储物柜",
+    "block.storagecabinet.storagecabinet_emerald": "绿宝石储物柜",
+    "block.storagecabinet.cabinet_manager": "储物柜管理器",
+    "item.storagecabinet.storagecabinet_wood_upgrade": "木储物柜升级",
+    "item.storagecabinet.storagecabinet_iron_upgrade": "铁储物柜升级",
+    "item.storagecabinet.storagecabinet_gold_upgrade": "金储物柜升级",
+    "item.storagecabinet.storagecabinet_diamond_upgrade": "钻石储物柜升级",
+    "item.storagecabinet.storagecabinet_emerald_upgrade": "绿宝石储物柜升级",
+    "item.storagecabinet.dolly": "储物柜手推车",
+    "item.storagecabinet.key": "储物柜钥匙",
+    "itemGroup.storagecabinet.storagecabinet": "储物柜",
+    "text.storagecabinet.dollyhas":"含有储物柜",
+    "text.storagecabinet.nocabinets": "没有储物柜",
+    "desc.storagecabinet.nocabinets": "当前没有储物柜连接到管理器"
+}

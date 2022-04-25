@@ -1,0 +1,138 @@
+
+{	
+	"item.resourceful_tools.glass_placer": "玻璃放置器",
+	"item.resourceful_tools.glass_placer.line1": "将一块玻璃块放在空中，玩家正在看的地方",
+	"item.resourceful_tools.glass_placer.line2": "右键单击以使用。",
+
+	"item.resourceful_tools.hand_tiller": "手动耕耘机",
+	"item.resourceful_tools.hand_tiller.line1":"用于从粘土和沙砾中获取资源",
+	"item.resourceful_tools.hand_tiller.jei_info.line1":"Use on gravel to get a chance of a bone fragment and clay for a chance of an ink sac",
+
+	"item.resourceful_tools.hook_knife": "钩刀",
+	"item.resourceful_tools.hook_knife.line1": "用于从绵羊身上取线而不伤害动物",
+	"item.resourceful_tools.hook_knife.line2": "在羊毛方块上使用，掉落线",
+
+	"item.resourceful_tools.hand_pick": "手镐",
+	"item.resourceful_tools.hand_pick.line1":"用于从几种类型的石头中获取资源",
+	"item.resourceful_tools.hand_pick.jei_info.line1":"Used to obtain resources from several types of stones",
+	"item.resourceful_tools.hand_pick.jei_info.line2":"Sandstone -> Saltpeter",
+	"item.resourceful_tools.hand_pick.jei_info.line3":"Netherrack -> Sulfur",
+	"item.resourceful_tools.hand_pick.jei_info.line4":"Magma Block -> Small Pile of Blaze Powder",
+	"item.resourceful_tools.hand_pick.jei_info.line5":"Nether Quartz -> Ghast Tear Fragment",
+	"item.resourceful_tools.hand_pick.jei_info.line6":"Blackstone -> Netherite Fragment",
+	"item.resourceful_tools.hand_pick.jei_info.line7":"End Stone -> Nether Star Fragment",
+
+	"item.resourceful_tools.hand_scraper": "Hand Scraper",
+	"item.resourceful_tools.hand_scrapper.line1":"Used on Bamboo to make sheets",
+	"item.resourceful_tools.hand_scrapper.line2":"Use in a crafting table",
+
+	"item.resourceful_tools.tree_trimmer": "手剪",
+	"item.resourceful_tools.tree_trimmer.line1": "用于从树叶和海洋植物中获取资源",
+	"item.resourceful_tools.tree_trimmer.jei_info.line1":"Use on various blocks for a chance to obtain the following drops:",
+	"item.resourceful_tools.tree_trimmer.jei_info.line2":"Spruce Leaves -> Feather",
+	"item.resourceful_tools.tree_trimmer.jei_info.line3":"Birch Leaves -> String",
+	"item.resourceful_tools.tree_trimmer.jei_info.line4":"Oak Leaves -> Apple",
+	"item.resourceful_tools.tree_trimmer.jei_info.line5":"Acacia Leaves -> Rabbit Foot",
+	"item.resourceful_tools.tree_trimmer.jei_info.line6":"Jungle Leaves -> Spider Eye",
+	"item.resourceful_tools.tree_trimmer.jei_info.line7":"Dark Oak Leaves -> Ender Pearl Fragment",
+	"item.resourceful_tools.tree_trimmer.jei_info.line8":"Tall Seagrass -> Prismarine Crystal",
+	"item.resourceful_tools.tree_trimmer.jei_info.line9":"Kelp Plant - > Prismarine Shard",
+
+	"item.resourceful_tools.powder_sulfur": "硫磺",
+	"item.resourceful_tools.powder_saltpeter": "硝石",
+
+	"item.resourceful_tools.bone_fragment": "骨碎片",
+	"item.resourceful_tools.pearl_fragment": "珍珠碎片",
+	"item.resourceful_tools.small_blaze_powder": "小堆烈焰粉",
+	"item.resourceful_tools.nether_star_fragment": "下界之星碎片",
+	"item.resourceful_tools.ghast_tear_fragment": "恶魂之泪碎片",
+	"item.resourceful_tools.netherite_fragment": "下界合金碎片",
+
+	"item.resourceful_tools.bamboo_sheet": "竹片",
+	"item.resourceful_tools.large_bamboo_sheet": "大竹片",
+
+	"item.resourceful_tools.ream_of_paper": "一沓纸",
+
+	"item.resourceful_tools.springs.general.line1": "Right-click on block with empty bucket",
+	"block.resourceful_tools.wellspring": "井泉",
+	"item.resourceful_tools.wellspring": "井泉",
+	"item.resourceful_tools.wellspring.line1": "An endless source of fresh, clean water",
+
+	"block.resourceful_tools.lavaspring": "熔岩泉",
+	"item.resourceful_tools.lavaspring": "熔岩泉",
+	"item.resourceful_tools.lavaspring.line1": "An endless source of piping hot lava",
+
+		"block.resourceful_tools.dirt_single": "压缩泥土",
+	"item.resourceful_tools.dirt_single": "压缩泥土",
+
+	"block.resourceful_tools.dirt_double": "2重压缩泥土",
+	"item.resourceful_tools.dirt_double": "2重压缩泥土",
+
+	"block.resourceful_tools.dirt_triple": "3重压缩泥土",
+	"item.resourceful_tools.dirt_triple": "3重压缩泥土",
+
+	"block.resourceful_tools.gravel_single": "压缩沙砾",
+	"item.resourceful_tools.gravel_single": "压缩沙砾",
+
+	"block.resourceful_tools.gravel_double": "2重压缩沙砾",
+	"item.resourceful_tools.gravel_double": "2重压缩沙砾",
+
+	"block.resourceful_tools.gravel_triple": "3重压缩沙砾",
+	"item.resourceful_tools.gravel_triple": "3重压缩沙砾",
+
+	"block.resourceful_tools.sand_single": "压缩沙子",
+	"item.resourceful_tools.sand_single": "压缩沙子",
+
+	"block.resourceful_tools.sand_double": "2重压缩沙子",
+	"item.resourceful_tools.sand_double": "2重压缩沙子",
+
+	"block.resourceful_tools.sand_triple": "3重压缩沙子",
+	"item.resourceful_tools.sand_triple": "3重压缩沙子",
+			
+	"block.resourceful_tools.cobblestone_single": "压缩圆石",
+	"item.resourceful_tools.cobblestone_single": "压缩圆石",
+
+	"block.resourceful_tools.cobblestone_double": "2重压缩圆石",
+	"item.resourceful_tools.cobblestone_double": "2重压缩圆石",
+
+	"block.resourceful_tools.cobblestone_triple": "3重压缩圆石",
+	"item.resourceful_tools.cobblestone_triple": "3重压缩圆石",
+
+	"block.resourceful_tools.andesite_single": "压缩安山岩",
+	"item.resourceful_tools.andesite_single": "压缩安山岩",
+
+	"block.resourceful_tools.andesite_double": "2重压缩安山岩",
+	"item.resourceful_tools.andesite_double": "2重压缩安山岩",
+
+	"block.resourceful_tools.andesite_triple": "3重压缩安山岩",
+	"item.resourceful_tools.andesite_triple": "3重压缩安山岩",
+
+	"block.resourceful_tools.diorite_single": "压缩闪长岩",
+	"item.resourceful_tools.diorite_single": "压缩闪长岩",
+
+	"block.resourceful_tools.diorite_double": "2重压缩闪长岩",
+	"item.resourceful_tools.diorite_double": "2重压缩闪长岩",
+
+	"block.resourceful_tools.diorite_triple": "3重压缩闪长岩",
+	"item.resourceful_tools.diorite_triple": "3重压缩闪长岩",
+
+	"block.resourceful_tools.granite_single": "压缩花岗岩",
+	"item.resourceful_tools.granite_single": "压缩花岗岩",
+
+	"block.resourceful_tools.granite_double": "2重压缩花岗岩",
+	"item.resourceful_tools.granite_double": "2重压缩花岗岩",
+
+	"block.resourceful_tools.granite_triple": "3重压缩花岗岩",
+	"item.resourceful_tools.granite_triple": "3重压缩花岗岩",
+
+	"block.resourceful_tools.netherrack_single": "压缩下界岩",
+	"item.resourceful_tools.netherrack_single": "压缩下界岩",
+
+	"block.resourceful_tools.netherrack_double": "2重压缩下界岩",
+	"item.resourceful_tools.netherrack_double": "2重压缩下界岩",
+
+	"block.resourceful_tools.netherrack_triple": "3重压缩下界岩",
+	"item.resourceful_tools.netherrack_triple": "3重压缩下界岩",
+
+	"itemGroup.resourceful_tools.resourceful_tools_group": "Resourceful Tools"
+}

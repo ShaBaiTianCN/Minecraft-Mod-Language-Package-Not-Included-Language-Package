@@ -1,0 +1,24 @@
+ {
+
+   "item.ag4tr.rubber_helmet": "Rubber Cap",
+   "item.ag4tr.rubber_chestplate": "Rubber Tunic",
+   "item.ag4tr.rubber_leggings": "Rubber Leggings",
+   "item.ag4tr.rubber_boots": "Rubber Boots",
+   "item.ag4tr.nv_goggles": "Night Vision Goggles",
+   "item.ag4tr.rhm_helmet": "Hazmat Helmet",
+   "item.ag4tr.rhm_chestplate": "Hazmat Chestpiece",
+   "item.ag4tr.rhm_leggings": "Hazmat Bottoms",
+   "item.ag4tr.taser": "Stun Gun",
+   "key.ag4tr.toggle_nv": "Toggle Night Vision Goggles",
+   "category.ag4tr.title": "Additional Gear For Tech Reborn",
+   "itemGroup.ag4tr.items": "Ag4tr",
+   "ag4tr.misc.deviceoff": "Inactive",
+   "ag4tr.misc.deviceon": "Active",
+   "ag4tr.misc.shortenednvgname": "Night Vision Goggles",
+   "ag4tr.misc.rhmchestplateairpressure": "O₂",
+   "ag4tr.misc.shortenedtasername4switchchatmessage": "Stun Gun",
+   "ag4tr.misc.tasertooltipcapacitors": "Capacitors"
+
+
+
+ }

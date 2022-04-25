@@ -1,0 +1,20 @@
+{
+  
+    "item.skyutils.wooden_hammer":   "Wooden Hammer",
+    "item.skyutils.stone_hammer":   "Stone Hammer",
+    "item.skyutils.iron_hammer":    "Iron Hammer",
+    "item.skyutils.diamond_hammer": "Diamond Hammer",
+    "item.skyutils.woodchips":      "Wood Chips",
+    "item.skyutils.pebble":      "Pebble",
+    "item.skyutils.crucible":      "Crucible",
+    "item.skyutils.diamond_nugget":      "Diamond nugget",
+    "item.skyutils.raw_crucible":      "Raw Crucible",
+    "item.skyutils.charcoal_block":      "Charcoal Block",
+    "item.skyutils.condenser":      "Condenser",
+    "item.skyutils.kiln":      "Kiln",
+    "block.skyutils.kiln":      "Kiln",
+    "block.skyutils.charcoal_block":      "Charcoal Block",
+    "block.skyutils.condenser":      "Condenser",
+    "container.skyutils.kiln":      "Kiln",
+    "generator.skyblock_island": "SkyBlock Island"
+  }

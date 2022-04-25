@@ -1,0 +1,33 @@
+{
+  "item.potionsnowballs.spectre_snowball": "灵光之雪球",
+  "item.potionsnowballs.tipped_snowball": "药水雪球",
+  "item.potionsnowballs.tipped_snowball.effect.empty": "不可创造的药水雪球",
+
+  "_comment": "原版",
+  "item.potionsnowballs.tipped_snowball.effect.water": "喷溅雪球",
+  "item.potionsnowballs.tipped_snowball.effect.mundane": "药水雪球",
+  "item.potionsnowballs.tipped_snowball.effect.thick": "药水雪球",
+  "item.potionsnowballs.tipped_snowball.effect.awkward": "药水雪球",
+  "item.potionsnowballs.tipped_snowball.effect.night_vision": "夜视之雪球",
+  "item.potionsnowballs.tipped_snowball.effect.invisibility": "隐身之雪球",
+  "item.potionsnowballs.tipped_snowball.effect.leaping": "跳跃之雪球",
+  "item.potionsnowballs.tipped_snowball.effect.fire_resistance": "抗火之雪球",
+  "item.potionsnowballs.tipped_snowball.effect.swiftness": "迅捷之雪球",
+  "item.potionsnowballs.tipped_snowball.effect.slowness": "迟缓之雪球",
+  "item.potionsnowballs.tipped_snowball.effect.water_breathing": "水肺之雪球",
+  "item.potionsnowballs.tipped_snowball.effect.healing": "治疗之雪球",
+  "item.potionsnowballs.tipped_snowball.effect.harming": "伤害之雪球",
+  "item.potionsnowballs.tipped_snowball.effect.poison": "毒药之雪球",
+  "item.potionsnowballs.tipped_snowball.effect.regeneration": "再生之雪球",
+  "item.potionsnowballs.tipped_snowball.effect.strength": "力量之雪球",
+  "item.potionsnowballs.tipped_snowball.effect.weakness": "虚弱之雪球",
+  "item.potionsnowballs.tipped_snowball.effect.levitation": "漂浮之雪球",
+  "item.potionsnowballs.tipped_snowball.effect.luck": "幸运之雪球",
+  "item.potionsnowballs.tipped_snowball.effect.turtle_master": "神龟之雪球",
+  "item.potionsnowballs.tipped_snowball.effect.slow_falling": "缓降之雪球",
+
+  "_comment": "夸克",
+  "item.potionsnowballs.tipped_snowball.effect.quark.resilience": "稳定雪球",
+  "item.potionsnowballs.tipped_snowball.effect.quark.danger_sight": "感知雪球",
+  "item.potionsnowballs.tipped_snowball.effect.quark.resistance": "抗性雪球"
+}

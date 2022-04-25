@@ -1,0 +1,23 @@
+{
+  "itemGroup.compactcrafting": "压缩合成",
+
+  "block.compactcrafting.field_projector": "微缩力场投影仪",
+  "block.compactcrafting.rescan_proxy": "区域代理（重新扫描）",
+  "block.compactcrafting.match_proxy": "区域代理（匹配）",
+
+  "item.compactcrafting.projector_dish": "微缩力场投影仪Miniaturization Projector Dish",
+  "item.compactcrafting.base": "基座",
+
+  "compactcrafting.jei.miniaturization.title": "微缩合成",
+  "compactcrafting.jei.miniaturization.component": "材料组成：放置于世界中。",
+  "compactcrafting.jei.miniaturization.catalyst": "将该物品投入微缩力场中以激活合成。",
+
+  "compactcrafting.top.current_recipe": "配方: ",
+  "compactcrafting.top.awaiting_catalyst": "等待输入催化剂",
+  "compactcrafting.top.progress": "%s / %s",
+
+  "tooltip.compactcrafting.proxy_bound": "范围边界: %s",
+  "tooltip.compactcrafting.proxy_hint": "通过红石控制使用区域代理进行自动化",
+  "tooltip.compactcrafting.proxy_bind_hint": "对着微缩力场投影仪上按住 Shift 键可绑定到区域",
+  "tooltip.compactcrafting.proxy_unbind_hint": "对着空气按住 Shift 键可从区域解绑。"
+}

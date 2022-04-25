@@ -1,0 +1,20 @@
+{
+  
+    "item.skyutils.wooden_hammer":   "木锤",
+    "item.skyutils.stone_hammer":   "石锤",
+    "item.skyutils.iron_hammer":    "铁锤",
+    "item.skyutils.diamond_hammer": "钻石锤",
+    "item.skyutils.woodchips":      "木屑",
+    "item.skyutils.pebble":      "石子",
+    "item.skyutils.crucible":      "坩埚",
+    "item.skyutils.diamond_nugget":      "钻石粒",
+    "item.skyutils.raw_crucible":      "未烧制的坩埚",
+    "item.skyutils.charcoal_block":      "木炭块",
+    "item.skyutils.condenser":      "冷凝器",
+    "item.skyutils.kiln":      "窑炉",
+    "block.skyutils.kiln":      "窑炉",
+    "block.skyutils.charcoal_block":      "木炭块",
+    "block.skyutils.condenser":      "冷凝器",
+    "container.skyutils.kiln":      "窑炉",
+    "generator.skyblock_island": "SkyBlock Island"
+  }

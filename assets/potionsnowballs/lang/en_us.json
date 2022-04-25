@@ -1,0 +1,33 @@
+{
+  "item.potionsnowballs.spectre_snowball": "Spectral Snowball",
+  "item.potionsnowballs.tipped_snowball": "Tipped Snowball",
+  "item.potionsnowballs.tipped_snowball.effect.empty": "Uncraftable Tipped Snowball",
+
+  "_comment": "Vanilla",
+  "item.potionsnowballs.tipped_snowball.effect.water": "Snowball of Splashing",
+  "item.potionsnowballs.tipped_snowball.effect.mundane": "Tipped Snowball",
+  "item.potionsnowballs.tipped_snowball.effect.thick": "Tipped Snowball",
+  "item.potionsnowballs.tipped_snowball.effect.awkward": "Tipped Snowball",
+  "item.potionsnowballs.tipped_snowball.effect.night_vision": "Snowball of Night Vision",
+  "item.potionsnowballs.tipped_snowball.effect.invisibility": "Snowball of Invisibility",
+  "item.potionsnowballs.tipped_snowball.effect.leaping": "Snowball of Leaping",
+  "item.potionsnowballs.tipped_snowball.effect.fire_resistance": "Snowball of Fire Resistance",
+  "item.potionsnowballs.tipped_snowball.effect.swiftness": "Snowball of Swiftness",
+  "item.potionsnowballs.tipped_snowball.effect.slowness": "Snowball of Slowness",
+  "item.potionsnowballs.tipped_snowball.effect.water_breathing": "Snowball of Water Breathing",
+  "item.potionsnowballs.tipped_snowball.effect.healing": "Snowball of Healing",
+  "item.potionsnowballs.tipped_snowball.effect.harming": "Snowball of Harming",
+  "item.potionsnowballs.tipped_snowball.effect.poison": "Snowball of Poison",
+  "item.potionsnowballs.tipped_snowball.effect.regeneration": "Snowball of Regeneration",
+  "item.potionsnowballs.tipped_snowball.effect.strength": "Snowball of Strength",
+  "item.potionsnowballs.tipped_snowball.effect.weakness": "Snowball of Weakness",
+  "item.potionsnowballs.tipped_snowball.effect.levitation": "Snowball of Levitation",
+  "item.potionsnowballs.tipped_snowball.effect.luck": "Snowball of Luck",
+  "item.potionsnowballs.tipped_snowball.effect.turtle_master": "Snowball of the Turtle Master",
+  "item.potionsnowballs.tipped_snowball.effect.slow_falling": "Snowball of Slow Falling",
+
+  "_comment": "Quark",
+  "item.potionsnowballs.tipped_snowball.effect.quark.resilience": "Snowball of Stability",
+  "item.potionsnowballs.tipped_snowball.effect.quark.danger_sight": "Snowball of Prescience",
+  "item.potionsnowballs.tipped_snowball.effect.quark.resistance": "Snowball of Fortitude"
+}

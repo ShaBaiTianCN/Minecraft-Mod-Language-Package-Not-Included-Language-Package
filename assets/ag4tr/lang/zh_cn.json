@@ -1,0 +1,24 @@
+ {
+
+   "item.ag4tr.rubber_helmet": "橡胶帽",
+   "item.ag4tr.rubber_chestplate": "橡胶胸甲",
+   "item.ag4tr.rubber_leggings": "橡胶护腿",
+   "item.ag4tr.rubber_boots": "橡胶靴子",
+   "item.ag4tr.nv_goggles": "夜视镜",
+   "item.ag4tr.rhm_helmet": "防辐射头盔",
+   "item.ag4tr.rhm_chestplate": "防辐射胸甲",
+   "item.ag4tr.rhm_leggings": "防辐射护腿",
+   "item.ag4tr.taser": "泰瑟枪",
+   "key.ag4tr.toggle_nv": "开关夜视镜",
+   "category.ag4tr.title": "技术重生的额外装备",
+   "itemGroup.ag4tr.items": "Ag4tr",
+   "ag4tr.misc.deviceoff": "未激活",
+   "ag4tr.misc.deviceon": "激活",
+   "ag4tr.misc.shortenednvgname": "夜视镜",
+   "ag4tr.misc.rhmchestplateairpressure": "O₂",
+   "ag4tr.misc.shortenedtasername4switchchatmessage": "泰瑟枪",
+   "ag4tr.misc.tasertooltipcapacitors": "电容器"
+
+
+
+ }

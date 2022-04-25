@@ -1,0 +1,9 @@
+{
+  "block.snad.snad": "子沙",
+  "block.snad.red_snad": "红子沙",
+  "block.snad.soul_snad": "灵魂子沙",
+
+  "config.title": "子沙配置",
+  "config.general": "常规选项",
+  "config.speed": "种植在子沙或红子沙上时加速生长"
+}

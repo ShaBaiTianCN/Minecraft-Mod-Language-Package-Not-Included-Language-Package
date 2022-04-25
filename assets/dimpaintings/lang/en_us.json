@@ -1,0 +1,9 @@
+{
+  "itemGroup.dimpaintings": "Dimensional Paintings",
+  "item.dimpaintings.overworld_painting": "Overworld Painting",
+  "item.dimpaintings.nether_painting": "Nether Painting",
+  "item.dimpaintings.end_painting": "End Painting",
+
+  "dimpaintings.same_dimension": "Can't teleport to the same dimension",
+  "dimpaintings.cooldown": "Teleportation on cooldown"
+}

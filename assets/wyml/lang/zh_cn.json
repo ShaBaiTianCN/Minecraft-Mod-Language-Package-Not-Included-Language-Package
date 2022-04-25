@@ -1,0 +1,15 @@
+{
+  "itemGroup.wyml.creative_tab": "WYML",
+  "item.wyml.paper_bag": "纸袋",
+
+  "item.wyml.oak_fence_gate": "'橡木栅栏门'",
+  "item.wyml.spruce_fence_gate": "'云杉木栅栏门'",
+  "item.wyml.birch_fence_gate": "'白桦木栅栏门'",
+  "item.wyml.jungle_fence_gate": "'丛林木栅栏门'",
+  "item.wyml.acacia_fence_gate": "'合金欢木栅栏门'",
+  "item.wyml.dark_oak_fence_gate": "'深色橡木栅栏门'",
+  "item.wyml.crimson_fence_gate": "'绯红木栅栏门'",
+  "item.wyml.warped_fence_gate": "'诡异木栅栏门'",
+
+  "container.wyml.paper_bag": "纸袋"
+}

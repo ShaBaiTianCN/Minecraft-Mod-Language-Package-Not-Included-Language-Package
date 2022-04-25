@@ -1,0 +1,15 @@
+{
+  "itemGroup.wyml.creative_tab": "WYML",
+  "item.wyml.paper_bag": "Paper Bag",
+
+  "item.wyml.oak_fence_gate": "'Oak Fence Gate'",
+  "item.wyml.spruce_fence_gate": "'Spruce Fence Gate'",
+  "item.wyml.birch_fence_gate": "'Birch Fence Gate'",
+  "item.wyml.jungle_fence_gate": "'Jungle Fence Gate'",
+  "item.wyml.acacia_fence_gate": "'Acacia Fence Gate'",
+  "item.wyml.dark_oak_fence_gate": "'Dark Oak Fence Gate'",
+  "item.wyml.crimson_fence_gate": "'Crimson Fence Gate'",
+  "item.wyml.warped_fence_gate": "'Warped Fence Gate'",
+
+  "container.wyml.paper_bag": "Paper Bag"
+}
