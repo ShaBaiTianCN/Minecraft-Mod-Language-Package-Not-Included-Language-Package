@@ -1,0 +1,9 @@
+{
+  "block.snad.snad": "Snad",
+  "block.snad.red_snad": "Red Snad",
+  "block.snad.soul_snad": "Soul Snad",
+
+  "config.title": "Snad Config",
+  "config.general": "General Tab",
+  "config.speed": "Growth increase when planted on Snad or Red Snad"
+}
