@@ -68,9 +68,7 @@ def extract_lang(path: str, blacklist: List[str]) -> None:
                     extract_list.append(file)
         # 解压语言文件
         for i in extract_list:
-            archive.extract(
-                i, i.replace('assets', os.path.join('temp', 'Extracted'))
-            )
+            archive.extract(i, os.path.join('temp', 'Extracted'))
 
 
 def main():
