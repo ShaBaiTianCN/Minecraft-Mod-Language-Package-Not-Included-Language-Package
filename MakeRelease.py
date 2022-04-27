@@ -1,11 +1,12 @@
 import os
 import time
+import json
 import shutil
 import zipfile
 
 NAME = 'Minecraft-Mod-Language-Package-Not-Included-Language-Package'
-RELEASE_NAME = f'{NAME}-{time.strftime("%Y%m%d%H%M%S", time.localtime())}'
-RELEASE_DIR = os.path.join('temp', RELEASE_NAME)
+TIME = time.strftime("%Y/%m/%d %H:%M:%S", time.localtime())
+RELEASE_DIR = os.path.join('temp', NAME)
 
 
 def touch_dir(path: str):
@@ -33,11 +34,21 @@ def main():
     # Touch folder
     touch_dir(RELEASE_DIR)
 
-    # Copy base files
+    # Basic files
     copy('LICENSE', False)
-    copy('pack.mcmeta', False)
     copy('pack.png', False)
     copy('README.md', False)
+    with open(
+            os.path.join(RELEASE_DIR, 'pack.mcmeta'),
+            'w',
+            encoding='utf-8'
+    ) as f:
+        json.dump({
+            "pack": {
+                "pack_format": 6,
+                "description": f"§d安逸汉化组§r\n打包时间：{TIME}"
+            }
+        }, f, indent=2, ensure_ascii=False)
 
     # Copy assets
     for mod_id in os.listdir('assets'):
