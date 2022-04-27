@@ -47,7 +47,7 @@
     "tips.tip.baby_panda_slimeball": "熊猫宝宝打喷嚏后有 0.1% 的几率掉落黏液球。",
     "tips.tip.fortress_triangulation": "你可以通过从两个不同的位置使用末影之眼并通过对要塞位置进行三角定位来寻找它们相交的位置。",
     "tips.tip.creeper_drops_disc": "如果骷髅或流浪者的箭杀死了爬行者，爬行者会随机掉落一张音乐唱片（不包括下界音乐唱片）。",
-    "tips.tip.mooshroom_lightning": "红色哞菇会变成棕色哞菇，棕色哞菇被闪电击中后会变成红色哞菇。",
+    "tips.tip.mooshroom_lightning": "当被闪电击中时，红色哞菇和棕色哞菇可以互相转换。",
     "tips.tip.bed_explode": "试图在其他维度睡觉会很糟糕。",
     "tips.tip.fall_damage_blocks": "一些像水和干草块这样的方块可以减少摔落伤害。",
     "tips.tip.bed_respawn": "在床上睡觉会设置你的出生点。",
