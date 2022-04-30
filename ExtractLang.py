@@ -1,84 +1,148 @@
 import os
 import re
+import shutil
 import zipfile
+
+import hjson
 import requests
-from typing import List
+
+from typing import Dict
 
 PATTERN = re.compile(r'assets/(?P<mod_id>.+?)/lang/(?P<language>.+?)\.json')
+TEMP_DIR = 'temp'
+RESOURCEPACK_DIR = os.path.join(TEMP_DIR, 'resourcepack')
+MODS_DIR = os.path.join(TEMP_DIR, 'mods')
+
+
+def touch_dir(path: str):
+    """
+    Create folder if not exist.
+    :param path: Folder path.
+    """
+    if not os.path.isdir(path):
+        os.makedirs(path)
 
 
 def match_lang(path):
     return PATTERN.match(path)
 
 
-def get_exist_mod_id() -> List[str]:
-    """
-    获取 Language Package 已有模组列表
-    """
-    return_list = []
+def unzip(file_path, dir_name):
+    with zipfile.ZipFile(file_path) as archive:
+        for file in archive.namelist():
+            if match_lang(file):
+                archive.extract(file, dir_name)
 
-    # 使用 GitHub API 获取所有 Release
-    release_list = requests.get(
+
+def get_resourcepack_lang() -> None:
+    """
+    获取汉化材质语言文件
+    """
+    # 下载CFPA汉化包
+    cfpa_release_list = requests.get(
         'https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases'
     ).json()
-    pack_name = ''
-
-    # 下载最新版1.16汉化包
-    for i in release_list:
-        pack_info = i['assets'][0]
-        if '1.16' in pack_info['name']:
-            pack_name = pack_info['name']
-            with open(pack_info['name'], 'wb') as file:
+    cfpa_pack_path = ''
+    for i in cfpa_release_list:
+        cfpa_pack_info = i['assets'][0]
+        cfpa_pack_name = cfpa_pack_info['name']
+        if '1.16' in cfpa_pack_name:
+            cfpa_pack_path = os.path.join('temp', cfpa_pack_name)
+            with open(cfpa_pack_path, 'wb') as file:
                 file.write(
-                    requests.get(pack_info['browser_download_url']).content
+                    requests.get(cfpa_pack_info['browser_download_url']).content
                 )
             break
+    unzip(cfpa_pack_path, RESOURCEPACK_DIR)
+    os.remove(cfpa_pack_path)
 
-    # 遍历列表获取 ModID
-    with zipfile.ZipFile(pack_name) as archive:
-        for file in archive.namelist():
-            match = match_lang(file)
-            if match:
-                return_list.append(match.groupdict()['mod_id'])
+    # 下载傻白甜汉化包
+    anyi_release_info = requests.get(
+        'https://gitee.com/api/v5/repos/ShaBaiTianCN/Minecraft-Mod-Language-Package-Not-Included-Language-Package/releases/latest'
+    ).json()['assets'][0]
+    anyi_pack_path = os.path.join('temp', anyi_release_info['name'])
+    with open(anyi_pack_path, 'wb') as f:
+        f.write(requests.get(anyi_release_info['browser_download_url']).content)
+    unzip(anyi_pack_path, RESOURCEPACK_DIR)
+    os.remove(anyi_pack_path)
 
-    os.remove(pack_name)
-    return list(set(return_list))
 
-
-def extract_lang(path: str, blacklist: List[str]) -> None:
+def get_mods_lang(path: str) -> None:
     """
     提取模组的语言文件
-    :param path: jar文件路径
-    :param blacklist: 黑名单
+    :param path: mods 文件夹路径
     :return: None
     """
-    extract_list = []
-    with zipfile.ZipFile(path) as archive:
-        # 遍历压缩包文件
-        for file in archive.namelist():
-            # 匹配正则为语言文件
-            match = match_lang(file)
-            if match:
-                info = match.groupdict()
-                # 忽略已有汉化
-                if info['language'] == 'zh_cn' or info['mod_id'] in blacklist:
-                    return
-                # 保存其他文件
-                elif info['language'] in ['en_us', 'zh_hk', 'zh_tw']:
-                    extract_list.append(file)
-        # 解压语言文件
-        for i in extract_list:
-            archive.extract(i, os.path.join('temp', 'Extracted'))
+
+    # 遍历模组列表
+    for i in os.listdir(path):
+        file_path = os.path.join(path, i)
+        # 检查为jar文件
+        if zipfile.is_zipfile(file_path):
+            unzip(file_path, MODS_DIR)
+
+
+def check_langs():
+    def get_lang(path) -> Dict[str, str] or None:
+        if os.path.isfile(path):
+            with open(path, encoding='utf-8') as f:
+                return hjson.load(f)
+        else:
+            return None
+
+    mods_assets_path = os.path.join(MODS_DIR, 'assets')
+    resourcepack_assets_path = os.path.join(RESOURCEPACK_DIR, 'assets')
+    for mod_id in os.listdir(mods_assets_path):
+        mod_lang_path = os.path.join(mods_assets_path, mod_id, 'lang')
+        en_us_path = os.path.join(mod_lang_path, 'en_us.json')
+        zh_cn_mod_path = os.path.join(mod_lang_path, 'zh_cn.json')
+        zh_tw_mod_path = os.path.join(mod_lang_path, 'zh_tw.json')
+        zh_cn_resourcepack_path = os.path.join(
+            resourcepack_assets_path,
+            mod_id,
+            'lang',
+            'zh_cn.json'
+        )
+        try:
+            en_us = get_lang(en_us_path)
+            zh_cn_mod = get_lang(zh_cn_mod_path)
+            zh_tw_mod = get_lang(zh_tw_mod_path)
+            zh_cn_resourcepack = get_lang(zh_cn_resourcepack_path)
+        except Exception as e:
+            print(f'Please check mod {mod_id}, an error occurs: {e}')
+            continue
+
+        # 完全一致则跳过
+        if (
+                (zh_cn_mod is not None and zh_cn_mod.keys() == en_us.keys()) or
+                (zh_cn_resourcepack is not None and
+                 zh_cn_resourcepack.keys() == en_us.keys())
+        ):
+            shutil.rmtree(os.path.join(MODS_DIR, 'assets', mod_id))
+        else:
+            # 合并汉化材质与官方汉化
+            zh_cn = {}
+            if zh_tw_mod is not None:
+                zh_cn.update(zh_tw_mod)
+            if zh_cn_resourcepack is not None:
+                zh_cn.update(zh_cn_resourcepack)
+            if zh_cn_mod is not None:
+                zh_cn.update(zh_cn_mod)
+
+            # 创建新汉化文件
+            new_zh_cn = en_us
+            for key in zh_cn.keys():
+                new_zh_cn[key] = zh_cn[key]
+            with open(zh_cn_mod_path, 'w', encoding='utf-8') as f:
+                hjson.dumpJSON(new_zh_cn, f, indent=4, ensure_ascii=False)
 
 
 def main():
-    dir_path = input('mods文件夹路径：')
-    blacklist = get_exist_mod_id()
-    for i in os.listdir(dir_path):
-        file_path = os.path.join(dir_path, i)
-        # 检查为jar文件
-        if zipfile.is_zipfile(file_path):
-            extract_lang(file_path, blacklist)
+    mods_path = input('mods文件夹路径：')
+    touch_dir(RESOURCEPACK_DIR)
+    get_mods_lang(mods_path)
+    get_resourcepack_lang()
+    check_langs()
 
 
 if __name__ == '__main__':
