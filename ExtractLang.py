@@ -112,29 +112,31 @@ def check_langs():
             print(f'Please check mod {mod_id}, an error occurs: {e}')
             continue
 
-        # 完全一致则跳过
-        if (
-                (zh_cn_mod is not None and zh_cn_mod.keys() == en_us.keys()) or
-                (zh_cn_resourcepack is not None and
-                 zh_cn_resourcepack.keys() == en_us.keys())
-        ):
-            shutil.rmtree(os.path.join(MODS_DIR, 'assets', mod_id))
-        else:
-            # 合并汉化材质与官方汉化
-            zh_cn = {}
-            if zh_tw_mod is not None:
-                zh_cn.update(zh_tw_mod)
-            if zh_cn_resourcepack is not None:
-                zh_cn.update(zh_cn_resourcepack)
-            if zh_cn_mod is not None:
-                zh_cn.update(zh_cn_mod)
+        # 合并汉化
+        zh_cn = {}
+        if zh_tw_mod is not None:
+            zh_cn.update(zh_tw_mod)
+        if zh_cn_resourcepack is not None:
+            zh_cn.update(zh_cn_resourcepack)
+        if zh_cn_mod is not None:
+            zh_cn.update(zh_cn_mod)
 
-            # 创建新汉化文件
-            new_zh_cn = en_us
-            for key in zh_cn.keys():
-                new_zh_cn[key] = zh_cn[key]
-            with open(zh_cn_mod_path, 'w', encoding='utf-8') as f:
-                hjson.dumpJSON(new_zh_cn, f, indent=4, ensure_ascii=False)
+        # 判断是否可以跳过
+        ignore_flag = True
+        for key in en_us.keys():
+            if key not in zh_cn.keys():
+                ignore_flag = False
+                break
+        if ignore_flag:
+            shutil.rmtree(os.path.join(MODS_DIR, 'assets', mod_id))
+            continue
+
+        # 创建新汉化文件
+        new_zh_cn = en_us
+        for key in zh_cn.keys():
+            new_zh_cn[key] = zh_cn[key]
+        with open(zh_cn_mod_path, 'w', encoding='utf-8') as f:
+            hjson.dumpJSON(new_zh_cn, f, indent=4, ensure_ascii=False)
 
 
 def main():
