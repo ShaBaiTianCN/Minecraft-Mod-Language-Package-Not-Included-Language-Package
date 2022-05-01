@@ -94,8 +94,8 @@ def get_mods_lang(path: str) -> None:
 def check_langs():
     def get_lang(path) -> Dict[str, str] or None:
         if os.path.isfile(path):
-            with open(path, encoding='utf-8') as f:
-                return hjson.load(f)
+            with open(path, encoding='utf-8') as lang_file:
+                return hjson.load(lang_file)
         else:
             return None
 
