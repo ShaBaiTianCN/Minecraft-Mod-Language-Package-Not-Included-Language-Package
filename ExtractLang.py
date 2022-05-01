@@ -11,7 +11,7 @@ from typing import Dict
 PATTERN = re.compile(r'assets/(?P<mod_id>.+?)/lang/(?P<language>.+?)\.json')
 TEMP_DIR = 'temp'
 RESOURCEPACK_DIR = os.path.join(TEMP_DIR, 'resourcepack')
-MODS_DIR = os.path.join(TEMP_DIR, 'mods')
+MODS_DIR = os.path.join(TEMP_DIR, 'assets')
 
 
 def touch_dir(path: str):
@@ -79,7 +79,16 @@ def get_mods_lang(path: str) -> None:
         file_path = os.path.join(path, i)
         # 检查为jar文件
         if zipfile.is_zipfile(file_path):
-            unzip(file_path, MODS_DIR)
+            unzip(file_path, TEMP_DIR)
+
+    # 整理文件
+    for mod_id in os.listdir(MODS_DIR):
+        mod_dir = os.path.join(MODS_DIR, mod_id)
+        for dirpath, dirnames, filenames in os.walk(mod_dir):
+            if 'lang' in dirpath:
+                for file in filenames:
+                    file_path = os.path.join(dirpath, file)
+                    os.renames(file_path, file_path.replace('lang\\', ''))
 
 
 def check_langs():
@@ -90,13 +99,12 @@ def check_langs():
         else:
             return None
 
-    mods_assets_path = os.path.join(MODS_DIR, 'assets')
     resourcepack_assets_path = os.path.join(RESOURCEPACK_DIR, 'assets')
-    for mod_id in os.listdir(mods_assets_path):
-        mod_lang_path = os.path.join(mods_assets_path, mod_id, 'lang')
-        en_us_path = os.path.join(mod_lang_path, 'en_us.json')
-        zh_cn_mod_path = os.path.join(mod_lang_path, 'zh_cn.json')
-        zh_tw_mod_path = os.path.join(mod_lang_path, 'zh_tw.json')
+    for mod_id in os.listdir(MODS_DIR):
+        mod_path = os.path.join(MODS_DIR, mod_id)
+        en_us_path = os.path.join(mod_path, 'en_us.json')
+        zh_cn_mod_path = os.path.join(mod_path, 'zh_cn.json')
+        zh_tw_mod_path = os.path.join(mod_path, 'zh_tw.json')
         zh_cn_resourcepack_path = os.path.join(
             resourcepack_assets_path,
             mod_id,
@@ -128,7 +136,7 @@ def check_langs():
                 ignore_flag = False
                 break
         if ignore_flag:
-            shutil.rmtree(os.path.join(MODS_DIR, 'assets', mod_id))
+            shutil.rmtree(mod_path)
             continue
 
         # 创建新汉化文件
