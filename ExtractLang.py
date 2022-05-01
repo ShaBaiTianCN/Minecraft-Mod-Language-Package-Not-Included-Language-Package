@@ -14,20 +14,32 @@ RESOURCEPACK_DIR = os.path.join(TEMP_DIR, 'resourcepack')
 MODS_DIR = os.path.join(TEMP_DIR, 'assets')
 
 
-def touch_dir(path: str):
+def touch_dir(path: str) -> None:
     """
-    Create folder if not exist.
+    Create folder if not exist
     :param path: Folder path.
+    :return: None
     """
     if not os.path.isdir(path):
         os.makedirs(path)
 
 
-def match_lang(path):
+def match_lang(path) -> re.Match:
+    """
+    Match lang file pattern
+    :param path: file path.
+    :return: Match object.
+    """
     return PATTERN.match(path)
 
 
-def unzip(file_path, dir_name):
+def unzip(file_path: str, dir_name: str) -> None:
+    """
+    Unzip lang files in zipfile.
+    :param file_path: zipfile path.
+    :param dir_name: target path.
+    :return: None
+    """
     with zipfile.ZipFile(file_path) as archive:
         for file in archive.namelist():
             if match_lang(file):
@@ -37,6 +49,7 @@ def unzip(file_path, dir_name):
 def get_resourcepack_lang() -> None:
     """
     获取汉化材质语言文件
+    :return: None
     """
     # 下载CFPA汉化包
     cfpa_release_list = requests.get(
@@ -73,7 +86,6 @@ def get_mods_lang(path: str) -> None:
     :param path: mods 文件夹路径
     :return: None
     """
-
     # 遍历模组列表
     for i in os.listdir(path):
         file_path = os.path.join(path, i)
@@ -91,7 +103,12 @@ def get_mods_lang(path: str) -> None:
                     os.renames(file_path, file_path.replace('lang\\', ''))
 
 
-def check_langs():
+def check_langs() -> None:
+    """
+    检查并合并语言文件
+    :return: None
+    """
+
     def get_lang(path) -> Dict[str, str] or None:
         if os.path.isfile(path):
             with open(path, encoding='utf-8') as lang_file:
@@ -99,18 +116,22 @@ def check_langs():
         else:
             return None
 
-    resourcepack_assets_path = os.path.join(RESOURCEPACK_DIR, 'assets')
+    # 遍历语言文件
     for mod_id in os.listdir(MODS_DIR):
+        # 计算各类文件路径
         mod_path = os.path.join(MODS_DIR, mod_id)
         en_us_path = os.path.join(mod_path, 'en_us.json')
         zh_cn_mod_path = os.path.join(mod_path, 'zh_cn.json')
         zh_tw_mod_path = os.path.join(mod_path, 'zh_tw.json')
         zh_cn_resourcepack_path = os.path.join(
-            resourcepack_assets_path,
+            RESOURCEPACK_DIR,
+            'assets',
             mod_id,
             'lang',
             'zh_cn.json'
         )
+
+        # 读取语言文件
         try:
             en_us = get_lang(en_us_path)
             zh_cn_mod = get_lang(zh_cn_mod_path)
