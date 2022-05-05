@@ -6,6 +6,7 @@ import zipfile
 
 NAME = 'Minecraft-Mod-Language-Package-Not-Included-Language-Package'
 TIME = time.strftime("%Y/%m/%d %H:%M:%S", time.localtime())
+VERSION = time.strftime("%Y%m%d%H%M%S", time.localtime())
 RELEASE_DIR = os.path.join('temp', NAME)
 
 
@@ -46,7 +47,7 @@ def main():
         json.dump({
             "pack": {
                 "pack_format": 6,
-                "description": f"§d安逸汉化组§r\n打包时间：{TIME}"
+                "description": f"§d安逸汉化组§r-{VERSION}\n打包时间：{TIME}"
             }
         }, f, indent=2, ensure_ascii=False)
 
