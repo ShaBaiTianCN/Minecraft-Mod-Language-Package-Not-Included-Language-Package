@@ -4,7 +4,7 @@ import json
 import shutil
 import zipfile
 
-NAME = '汉化补充资源包'
+NAME = 'Minecraft-Mod-Language-Package-Not-Included-Language-Package'
 TIME = time.strftime("%Y/%m/%d %H:%M:%S", time.localtime())
 VERSION = time.strftime("%Y%m%d%H%M%S", time.localtime())
 RELEASE_DIR = os.path.join('temp', NAME)
