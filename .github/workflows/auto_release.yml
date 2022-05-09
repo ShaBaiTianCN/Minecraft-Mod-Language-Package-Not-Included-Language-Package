@@ -15,7 +15,8 @@ jobs:
         with:
           python-version: 3.9
 
-      - name: Run MakeRelease
+      - name: Make Release
+        id: make_release
         run: python MakeRelease.py
 
       - name: Get Current Time
