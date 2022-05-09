@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD033 -->
 # Minecraft-Mod-Language-Package-Not-Included-Language-Package
 
-[![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue)](https://gitee.com/ShaBaiTianCN/Minecraft-Mod-Language-Package-Not-Included-Language-Package/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue)](https://github.com/ShaBaiTianCN/Minecraft-Mod-Language-Package-Not-Included-Language-Package/blob/master/LICENSE)
 
 ## 仓库说明
 
