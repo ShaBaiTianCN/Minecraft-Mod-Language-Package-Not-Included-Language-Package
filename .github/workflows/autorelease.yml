@@ -1,0 +1,44 @@
+name: Auto Release
+on: [ workflow_dispatch, push ]
+
+jobs:
+  auto_release:
+    runs-on: ubuntu-latest
+    name: Auto Release
+
+    steps:
+      - name: Check Out
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Run MakeRelease
+        run: python MakeRelease.py
+
+      - name: Get Current Time
+        id: time
+        run: echo "::set-output name=value::$(date '+%Y%m%d%H%M%S')"
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.time.outputs.value }}
+          release_name: AutoRelease-${{ steps.time.outputs.value }}
+          draft: false
+          prerelease: false
+
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: temp/Minecraft-Mod-Language-Package-Not-Included-Language-Package.zip
+          asset_name: Minecraft-Mod-Language-Package-Not-Included-Language-Package.zip
+          asset_content_type: application/zip

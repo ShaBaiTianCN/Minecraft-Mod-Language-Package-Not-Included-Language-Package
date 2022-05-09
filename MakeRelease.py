@@ -47,7 +47,7 @@ def main():
         json.dump({
             "pack": {
                 "pack_format": 6,
-                "description": f"§d安逸汉化组§r-{VERSION}\n打包时间：{TIME}"
+                "description": f"§d安逸汉化组§r\n打包时间：{TIME}"
             }
         }, f, indent=2, ensure_ascii=False)
 
@@ -77,3 +77,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+    print(os.listdir('.'))
+    print(os.listdir('temp'))
