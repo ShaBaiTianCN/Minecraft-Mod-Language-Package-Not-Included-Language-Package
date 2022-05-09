@@ -1,8 +1,12 @@
 name: Auto Release
-on: [ workflow_dispatch, push ]
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - 'master'
 
 jobs:
-  auto_release:
+  pack:
     runs-on: ubuntu-latest
     name: Auto Release
 
@@ -17,7 +21,7 @@ jobs:
 
       - name: Make Release
         id: make_release
-        run: python MakeRelease.py
+        run: python Packer.py
 
       - name: Get Current Time
         id: time
