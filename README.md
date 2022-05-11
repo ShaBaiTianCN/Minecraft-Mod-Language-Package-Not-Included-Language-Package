@@ -1,7 +1,10 @@
 <!-- markdownlint-disable MD033 -->
 # Minecraft-Mod-Language-Package-Not-Included-Language-Package
 
-[![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue)](https://github.com/ShaBaiTianCN/Minecraft-Mod-Language-Package-Not-Included-Language-Package/blob/master/LICENSE)
+[![Website](https://shields.io/website?up_message=anyijun.com&url=http://anyijun.com&label=Website)](http://anyijun.com)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-blue)](https://github.com/ShaBaiTianCN/Minecraft-Mod-Language-Package-Not-Included-Language-Package/blob/master/LICENSE)
+[![Downloads](https://shields.io/github/downloads/ShaBaiTianCN/Minecraft-Mod-Language-Package-Not-Included-Language-Package/total?label=Downloads)](https://github.com/ShaBaiTianCN/Minecraft-Mod-Language-Package-Not-Included-Language-Package/releases)
+[![Release](https://shields.io/github/v/release/ShaBaiTianCN/Minecraft-Mod-Language-Package-Not-Included-Language-Package?display_name=tag&include_prereleases&label=Release)](https://github.com/ShaBaiTianCN/Minecraft-Mod-Language-Package-Not-Included-Language-Package/releases/latest)
 
 ## 仓库说明
 
