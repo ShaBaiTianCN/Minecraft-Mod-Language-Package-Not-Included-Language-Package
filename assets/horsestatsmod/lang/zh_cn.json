@@ -1,14 +1,14 @@
 {
-  "horsestatsmod.stats": "Stats",
-  "horsestatsmod.health": "血量",
+  "horsestatsmod.stats": "数据",
+  "horsestatsmod.health": "生命值",
   "horsestatsmod.jump": "跳跃",
   "horsestatsmod.speed": "速度",
-  "horsestatsmod.slots": "Slots",
-  "horsestatsmod.blocks": "Blocks",
-  "horsestatsmod.metersperseconds": "m/s",
+  "horsestatsmod.slots": "槽位",
+  "horsestatsmod.blocks": "方块",
+  "horsestatsmod.metersperseconds": "米/秒",
   "horsestatsmod.player": "玩家",
-  "horsestatsmod.walk": "Walk",
-  "horsestatsmod.sprint": "Sprint",
-  "horsestatsmod.min": "min",
-  "horsestatsmod.max": "max"
+  "horsestatsmod.walk": "行走",
+  "horsestatsmod.sprint": "疾跑",
+  "horsestatsmod.min": "最小",
+  "horsestatsmod.max": "最大"
 }
