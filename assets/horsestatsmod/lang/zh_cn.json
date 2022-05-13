@@ -1,0 +1,14 @@
+{
+  "horsestatsmod.stats": "Stats",
+  "horsestatsmod.health": "血量",
+  "horsestatsmod.jump": "跳跃",
+  "horsestatsmod.speed": "速度",
+  "horsestatsmod.slots": "Slots",
+  "horsestatsmod.blocks": "Blocks",
+  "horsestatsmod.metersperseconds": "m/s",
+  "horsestatsmod.player": "玩家",
+  "horsestatsmod.walk": "Walk",
+  "horsestatsmod.sprint": "Sprint",
+  "horsestatsmod.min": "min",
+  "horsestatsmod.max": "max"
+}
