@@ -35,4 +35,4 @@ jobs:
         with:
           issue-number: ${{ github.event.number }}
           body: |
-            [点击](../actions/runs/${{ github.run_id }}) 下载此 PR 的最新打包。
+            在 [这里](../actions/runs/${{ github.run_id }}) 下载此 PR 的最新打包。
