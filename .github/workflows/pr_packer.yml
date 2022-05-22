@@ -8,22 +8,21 @@ jobs:
 
     steps:
       - name: Check Out
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
-          python-version: 3.9
+          python-version: '3.10'
 
       - name: Pack
         id: pack
         run: python Packer.py
 
       - name: Unzip Files
-        run:  |
-          unzip temp/Minecraft-Mod-Language-Package-Not-Included-Language-Package.zip -d Minecraft-Mod-Language-Package-Not-Included-Language-Package
+        run:  unzip temp/Minecraft-Mod-Language-Package-Not-Included-Language-Package.zip -d Minecraft-Mod-Language-Package-Not-Included-Language-Package
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
@@ -36,4 +35,4 @@ jobs:
         with:
           issue-number: ${{ github.event.number }}
           body: |
-            在 [这里](../actions/runs/${{ github.run_id }}) 下载此 PR 的最新打包。
+            [点击](../actions/runs/${{ github.run_id }}) 下载此 PR 的最新打包。
