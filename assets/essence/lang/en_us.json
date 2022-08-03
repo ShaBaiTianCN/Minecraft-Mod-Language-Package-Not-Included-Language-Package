@@ -1,0 +1,39 @@
+{
+  "item.essence.basic_mob_essence": "Basic Mob Essence",
+  "item.essence.advanced_mob_essence": "Advanced Mob Essence",
+  "item.essence.elite_mob_essence": "Elite Mob Essence",
+
+  "item.essence.basic_ore_essence": "Basic Ore Essence",
+  "item.essence.advanced_ore_essence": "Advanced Ore Essence",
+  "item.essence.elite_ore_essence": "Elite Ore Essence",
+
+  "item.essence.activated_spawner_shard": "Activated Spawner Shard",
+  "item.essence.spawner_shard": "Spawner Shard",
+  "item.essence.lightning_water_bucket": "Lightning Water Bucket",
+  "item.essence.spawner_shard_extractor": "Spawner Shard Extractor",
+  "item.essence.essence_converter": "Essence Converter",
+  "item.essence.lightning_summoner": "Lightning Summoner",
+
+  "block.essence.basic_mob_essence_block": "Basic Mob Essence Block",
+  "block.essence.advanced_mob_essence_block": "Advanced Mob Essence Block",
+  "block.essence.elite_mob_essence_block": "Elite Mob Essence Block",
+  "block.essence.basic_ore_essence_block": "Basic Ore Essence Block",
+  "block.essence.advanced_ore_essence_block": "Advanced Ore Essence Block",
+  "block.essence.elite_ore_essence_block": "Elite Ore Essence Block",
+  "block.essence.solid_lightning_water_block": "Solid Lightning Water Block",
+  "block.essence.essence_converter_block": "Essence Converter Block",
+
+  "fluid.essence.lightning_water_source": "Lightning Water",
+
+  "itemGroup.essence": "Essence",
+
+  "tooltip.essence.lightning_summoner.tooltip.shift": "Right click on a solid lightning water block to create lightning water!",
+  "tooltip.essence.lightning_summoner.tooltip": "Press §eSHIFT§r for more Information!",
+  "tooltip.essence.block.solid_lightning_water_block": "Right click on this with a lightning summoner to create lightning water!",
+  "tooltip.essence.spawner_shard_extractor.tooltip.shift": "Right clicking on a spawner will break the block with a chance to get spawner shards",
+  "tooltip.essence.spawner_shard_extractor.tooltip": "Press §eSHIFT§r for more Information!",
+  "tooltip.essence.mob_essence.tooltip.shift": "All mobs have a 25% chance to drop mob essence!",
+  "tooltip.essence.mob_essence.tooltip": "Press §eSHIFT§r for more Information!",
+  "tooltip.essence.ore_essence.tooltip.shift": "All ores have a 25% chance to drop ore essence!",
+  "tooltip.essence.ore_essence.tooltip": "Press §eSHIFT§r for more Information!"
+}
