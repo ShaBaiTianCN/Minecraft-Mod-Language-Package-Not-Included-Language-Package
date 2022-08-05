@@ -14,14 +14,14 @@
   "item.essence.essence_converter": "精华转换器",
   "item.essence.lightning_summoner": "闪电生成器",
 
-  "block.essence.basic_mob_essence_block": "基础怪物精华方块",
-  "block.essence.advanced_mob_essence_block": "高级怪物精华方块",
-  "block.essence.elite_mob_essence_block": "精英怪物精华方块",
-  "block.essence.basic_ore_essence_block": "基础矿物精华方块",
-  "block.essence.advanced_ore_essence_block": "高级矿物精华方块",
-  "block.essence.elite_ore_essence_block": "精英矿物精华方块",
+  "block.essence.basic_mob_essence_block": "基础怪物精华块",
+  "block.essence.advanced_mob_essence_block": "高级怪物精华块",
+  "block.essence.elite_mob_essence_block": "精英怪物精华块",
+  "block.essence.basic_ore_essence_block": "基础矿物精华块",
+  "block.essence.advanced_ore_essence_block": "高级矿物精华块",
+  "block.essence.elite_ore_essence_block": "精英矿物精华块",
   "block.essence.solid_lightning_water_block": "固态高压水",
-  "block.essence.essence_converter_block": "精华转换器方块",
+  "block.essence.essence_converter_block": "精华转换器",
 
   "fluid.essence.lightning_water_source": "高压水",
 
