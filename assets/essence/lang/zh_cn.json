@@ -7,12 +7,12 @@
   "item.essence.advanced_ore_essence": "高级矿物精华",
   "item.essence.elite_ore_essence": "精英矿物精华",
 
-  "item.essence.activated_spawner_shard": "活化刷怪笼碎片",
+  "item.essence.activated_spawner_shard": "激活的刷怪笼碎片",
   "item.essence.spawner_shard": "刷怪笼碎片",
-  "item.essence.lightning_water_bucket": "闪电水桶",
+  "item.essence.lightning_water_bucket": "高压水桶",
   "item.essence.spawner_shard_extractor": "刷怪笼碎片提取器",
   "item.essence.essence_converter": "精华转换器",
-  "item.essence.lightning_summoner": "闪电制作者",
+  "item.essence.lightning_summoner": "闪电生成器",
 
   "block.essence.basic_mob_essence_block": "基础怪物精华块",
   "block.essence.advanced_mob_essence_block": "高级怪物精华块",
@@ -20,20 +20,20 @@
   "block.essence.basic_ore_essence_block": "基础矿物精华块",
   "block.essence.advanced_ore_essence_block": "高级矿物精华块",
   "block.essence.elite_ore_essence_block": "精英矿物精华块",
-  "block.essence.solid_lightning_water_block": "固体闪电水方块",
+  "block.essence.solid_lightning_water_block": "固态高压水",
   "block.essence.essence_converter_block": "精华转换器",
 
-  "fluid.essence.lightning_water_source": "闪电水",
+  "fluid.essence.lightning_water_source": "高压水",
 
   "itemGroup.essence": "精华",
 
-  "tooltip.essence.lightning_summoner.tooltip.shift": "右键固体闪电水方块以创造闪电水",
-  "tooltip.essence.lightning_summoner.tooltip": "按下§eSHIFT§r键以获得更多信息！",
-  "tooltip.essence.block.solid_lightning_water_block": "手持闪电制作者右键此方块以创造闪电水",
-  "tooltip.essence.spawner_shard_extractor.tooltip.shift": "手持此物品右键刷怪笼将会破坏此方块并且有几率掉落刷怪笼碎片",
-  "tooltip.essence.spawner_shard_extractor.tooltip": "按下§eSHIFT§r键以获得更多信息！",
-  "tooltip.essence.mob_essence.tooltip.shift": "每个怪物都有25%的几率掉落怪物精华！",
-  "tooltip.essence.mob_essence.tooltip": "按下§eSHIFT§r键以获得更多信息！",
-  "tooltip.essence.ore_essence.tooltip.shift": "所有矿物都有25%的几率掉落矿物精华！",
-  "tooltip.essence.ore_essence.tooltip": "按下§eSHIFT§r键以获得更多信息！"
+  "tooltip.essence.lightning_summoner.tooltip.shift": "右键固态高压水以创造高压水！",
+  "tooltip.essence.lightning_summoner.tooltip": "按住§eSHIFT§r获取更多信息！",
+  "tooltip.essence.block.solid_lightning_water_block": "用闪电生成器右键它来获取高压水！",
+  "tooltip.essence.spawner_shard_extractor.tooltip.shift": "右键刷怪笼将会破坏它并且概率获得刷怪笼碎片",
+  "tooltip.essence.spawner_shard_extractor.tooltip": "按住§eSHIFT§r获取更多信息！",
+  "tooltip.essence.mob_essence.tooltip.shift": "所有怪物有25%的几率掉落怪物精华！",
+  "tooltip.essence.mob_essence.tooltip": "按住§eSHIFT§r获取更多信息！",
+  "tooltip.essence.ore_essence.tooltip.shift": "所有矿物有25%的几率掉落矿物精华！",
+  "tooltip.essence.ore_essence.tooltip": "按住§eSHIFT§r获取更多信息！"
 }
