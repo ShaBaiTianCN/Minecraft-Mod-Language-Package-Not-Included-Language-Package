@@ -1,0 +1,9 @@
+{
+	"entity.luggage.luggage": "Luggage",
+	"item.luggage.luggage": "Luggage",
+	"keybind.luggage.whistle": "Whistle for Luggage",
+	"subtitles.luggage.entity.luggage.killed": "Luggage shatters",
+	"subtitles.luggage.entity.luggage.eat_food": "Luggage eats food",
+	"subtitles.luggage.entity.luggage.eat_item": "Luggage eats item",
+	"subtitles.luggage.entity.player.whistle": "Player whistles"
+}
