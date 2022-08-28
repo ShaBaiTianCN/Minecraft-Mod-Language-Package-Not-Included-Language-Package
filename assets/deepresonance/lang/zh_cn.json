@@ -54,9 +54,9 @@
   "message.deepresonance.smelter.header": "这个机器可以熔炼共振水晶矿，并把产生的共振水晶液输出到顶部的储罐内。记得在冶炼炉下方放置一个装满大约一半熔岩的储罐。",
   "message.deepresonance.purifier.header": "这个机器通过使用过滤材料来纯化顶部储罐内的共振水晶液然后把他们输出到另一个稍低的储罐内。",
   "message.deepresonance.crystallizer.header": "这台机器将从它下面的储罐中抽取共振水晶液，并结晶成共振水晶。",
-  "message.deepresonance.generator_controller.header": "多方块结构--发电机的一部分。 通过这个方块输入红石信号来控制发电机的开启与关闭。",
-  "message.deepresonance.energy_collector.header": "多方块结构--发电机的一部分。将其放在附近有共振晶体的发电机的顶部。",
-  "message.deepresonance.generator_part.header": "多方块结构--发电机的一部分。你想怎么放都可以",
+  "message.deepresonance.generator_controller.header": "多方块结构——发电机的一部分。 通过这个方块输入红石信号来控制发电机的开启与关闭。",
+  "message.deepresonance.energy_collector.header": "多方块结构——发电机的一部分。将其放在附近有共振晶体的发电机的顶部。",
+  "message.deepresonance.generator_part.header": "多方块结构——发电机的一部分。你想怎么放都可以",
   "message.deepresonance.generator_part.power": "能量：",
   "message.deepresonance.laser.header": "把注射激光放在一个镜片后面，它就会根据所使用的材料将液体注入罐中。",
   "message.deepresonance.laser.liquid": "流体："
