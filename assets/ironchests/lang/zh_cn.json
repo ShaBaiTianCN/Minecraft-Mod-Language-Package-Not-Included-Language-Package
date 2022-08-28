@@ -1,7 +1,7 @@
 {
-  "item.key.chesttype": "箱子名: ",
-  "item.key.chestpos": "箱子位置: [X=%d, Y=%d, Z=%d]",
-  "item.dolly.chestid": "箱子: %s",
+  "item.key.chesttype": "箱子名：",
+  "item.key.chestpos": "箱子位置：[X=%d, Y=%d, Z=%d]",
+  "item.dolly.chestid": "箱子：%s",
   "container.chest.dirt": "泥箱子",
   "container.chest.copper": "铜箱子",
   "container.chest.iron": "铁箱子",

@@ -85,9 +85,9 @@
   "dmlreforged.living_matter.extraterrestrial": "Extraterrestrial",
   "dmlreforged.trial_key.notattuned": "该钥匙当前未调谐",
   "dmlreforged.trial_key.attunement_go_to_jei": "在指南中了解关于调谐的更多信息",
-  "dmlreforged.trial_key.attuned_type": "钥匙调谐到： %1$s",
-  "dmlreforged.trial_key.tier": "钥匙等级: %1$s",
-  "dmlreforged.trial_key.affixes": "词缀： %1$s",
+  "dmlreforged.trial_key.attuned_type": "钥匙调谐到：%1$s",
+  "dmlreforged.trial_key.tier": "钥匙等级：%1$s",
+  "dmlreforged.trial_key.affixes": "词缀：%1$s",
   "dmlreforged.trial_key.affix_go_to_jei": "阅读更多关于指南中每个词缀的信息",
   
   "dmlreforged.gui.deep_learner.overlay": "%1$s 模型",

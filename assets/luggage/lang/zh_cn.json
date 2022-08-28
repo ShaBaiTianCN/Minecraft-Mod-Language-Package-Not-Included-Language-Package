@@ -1,9 +1,9 @@
 {
 	"entity.luggage.luggage": "行李箱",
 	"item.luggage.luggage": "行李箱",
-	"keybind.luggage.whistle": "行李箱召唤",
-	"subtitles.luggage.entity.luggage.killed": "行李箱死亡",
-	"subtitles.luggage.entity.luggage.eat_food": "行李箱拾取食物",
-	"subtitles.luggage.entity.luggage.eat_item": "行李箱拾取物品",
-	"subtitles.luggage.entity.player.whistle": "召唤行李箱"
+	"keybind.luggage.whistle": "召唤行李箱",
+	"subtitles.luggage.entity.luggage.killed": "行李箱：死亡",
+	"subtitles.luggage.entity.luggage.eat_food": "行李箱：拾取食物",
+	"subtitles.luggage.entity.luggage.eat_item": "行李箱：拾取物品",
+	"subtitles.luggage.entity.player.whistle": "行李箱：召唤"
 }

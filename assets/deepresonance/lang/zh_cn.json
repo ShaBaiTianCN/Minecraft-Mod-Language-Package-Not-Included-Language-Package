@@ -46,7 +46,7 @@
 
   "message.deepresonance.no_tank": "没有储罐！",
 
-  "message.deepresonance.liquid_injector.header": "创造模式物品。可向储罐中注入100mb共振水晶液",
+  "message.deepresonance.liquid_injector.header": "创造模式物品。可向储罐中注入100mB共振水晶液",
 
   "message.deepresonance.tank.header": "储罐容积为16桶。还可以混合桶中不同的共振水晶液。在旁边放一个比较器就可以知道装了多少液体。",
   "message.deepresonance.tank.liquid": "流体：",
