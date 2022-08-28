@@ -90,7 +90,7 @@
   "dmlreforged.trial_key.affixes": "词缀：%1$s",
   "dmlreforged.trial_key.affix_go_to_jei": "阅读更多关于指南中每个词缀的信息",
   
-  "dmlreforged.gui.deep_learner.overlay": "%1$s 模型",
+  "dmlreforged.gui.deep_learner.overlay": "%1$s模型",
   
   "dmlreforged.gui.deep_learner.not_found": "数据模型未找到",
   "dmlreforged.gui.deep_learner.insert": "请插入数据模型！",
