@@ -1,0 +1,40 @@
+{
+  "itemGroup.soulshards": "灵魂碎片：重生",
+
+  "item.soulshards.soul_shard": "灵魂碎片",
+  "item.soulshards.soul_shard_unbound": "灵魂碎片（未绑定）",
+  "item.soulshards.corrupted_ingot": "腐化金属锭",
+  "item.soulshards.corrupted_essence": "腐化精华",
+  "item.soulshards.vile_dust": "污秽粉末",
+  "item.soulshards.vile_sword": "污秽剑",
+
+  "block.soulshards.soul_cage": "灵魂笼",
+
+  "tooltip.soulshards.bound": "已绑定至： %s",
+  "tooltip.soulshards.kills": "灵魂： %d",
+  "tooltip.soulshards.tier": "等级： %d",
+  "tooltip.soulshards.owner": "所有者： %s",
+  "tooltip.soulshards.cage_born": "笼子重生",
+
+  "enchantment.soulshards.soul_stealer": "窃魂",
+
+  "chat.soulshards.absorb_disabled": "§c碎片似乎拒绝了被困的灵魂...",
+  "chat.soulshards.command_killed": "§2已击杀 §2%d §2实体",
+  "chat.soulshards.command_not_found": "§c未找到任何生成的实体",
+
+  "commands.soulshards.usage": "/soulshards [setEnt|setKills|setOwner|killall]",
+  "commands.soulshards.set_ent.usage": "/soulshards setEnt <entityId>",
+  "commands.soulshards.set_ent.success": "将手持碎片的实体绑定至 %s.",
+  "commands.soulshards.set_kills.usage": "/soulshards setKills <killCount>",
+  "commands.soulshards.set_kills.success": "设定手持碎片的击杀数至 %d.",
+  "commands.soulshards.set_owner.usage": "/soulshards setOwner [owner]",
+  "commands.soulshards.set_owner.success": "设定手持碎片的所有者为 %s.",
+  "commands.soulshards.kill_all.usage": "/soulshards killall",
+  "commands.soulshards.kill_all.success": "已杀死 %d 个灵魂笼重生的实体",
+  "commands.soulshards.error.not_a_shard": "手持物品不是灵魂碎片。",
+  "commands.soulshards.error.not_a_entity": "%s 无效或未注册",
+
+  "enchantment.soulshards.soul_stealer.desc": "增加一次击杀所收集的灵魂。",
+
+  "jei.soulshards.soul_shard.desc": "被击杀者灵魂的容器\\n\\n通过在世界中创建一个结构并在原始的方块上使用 %s 获得。"
+}
