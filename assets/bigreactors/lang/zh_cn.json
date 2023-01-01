@@ -28,8 +28,8 @@
     "item.bigreactors.ludicrite_dust": "镠粉",
     "item.bigreactors.ridiculite_dust": "悖谬粉",
     "item.bigreactors.inanite_dust": "空想粉",
-    "item.bigreactors.anglesite_crystal": "硫酸铅矿晶体(PbSO4)",
-    "item.bigreactors.benitoite_crystal": "蓝锥矿晶体(BaTiSi3O9)",
+    "item.bigreactors.anglesite_crystal": "硫酸铅矿晶体（PbSO4）",
+    "item.bigreactors.benitoite_crystal": "蓝锥矿晶体（BaTiSi3O9）",
     "item.bigreactors.wrench": "扳手",
     "item.bigreactors.steam_bucket": "蒸汽桶",
     "item.bigreactors.yellorium_bucket": "黄铀桶",
@@ -662,4 +662,5 @@
     "compat.bigreactors.jei.condensation.recipecategory.title": "冷凝",
     "compat.bigreactors.jei.coolantmappings.recipecategory.title": "流体<=>冷却液",
     "compat.bigreactors.jei.vapormappings.recipecategory.title": "流体<=>蒸汽"
-}
+  }
+  
